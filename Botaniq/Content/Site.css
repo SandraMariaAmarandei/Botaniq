@@ -1,0 +1,144 @@
+﻿ body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #FFFFFF;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h1 {
+    background: transparent;
+    text-align: center;
+}
+
+.top {
+    background-color: #35647d;
+    height: 40px;
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+    color: #898989;
+    text-align: center;
+    padding: 14px 30px;
+    font-size: 20px;
+}
+
+.topnav a:hover {
+    color: #35647d; /*#90993d;*/
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar {
+    float: right;
+    padding-top: 70px;
+    margin-right: 400px;
+}
+
+.media {
+    float: right;
+}
+
+ .fa {
+     font-size: 20px;
+     width: 32px;
+     text-align: center;
+     margin: 9px 3px;
+ }
+
+ .fa:hover {
+     opacity: 0.7;
+     color: #f2f3e2;
+ }
+
+ .fa-facebook {
+     color: white;
+ }
+
+ .fa-twitter {
+     color: white;
+ }
+
+ .fa-instagram {
+  color: white;
+}
+
+ .logo {
+     width: 180px;
+     height: 180px;
+     margin-left: 50px;
+ }
+
+ .topnav input[type=text] {
+     float: right;
+     padding: 6px;
+     margin-top: -115px;
+     margin-right: 60px;
+     border: 2px solid #35647d;
+     font-size: 17px;
+ }
+
+
+ .mySlides {display: none;}
+ .mySlides img {vertical-align: middle;
+     width: 100%;
+     height: 400px;
+ }
+
+ /* Slideshow container */
+ .slideshow-container {
+     /*max-width: 1000px;*/
+     position: relative;
+     margin: auto;
+ }
+
+ /* Caption text */
+ .text {
+     color: #f2f2f2;
+     font-size: 15px;
+     padding: 8px 12px;
+     position: absolute;
+     bottom: 8px;
+     width: 100%;
+     text-align: center;
+ }
+
+ /* The dots/bullets/indicators */
+ .dot {
+     height: 15px;
+     width: 15px;
+     margin: 0 2px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+ }
+
+ .active {
+     background-color: #717171;
+ }
+
+ /* Fading animation */
+ .fade {
+     animation-name: fade;
+     animation-duration: 15s;
+ }
+
+ @-webkit-keyframes fade {
+     from {opacity: .7} 
+     to {opacity: 1}
+ }
+
+ @keyframes fade {
+     from {opacity: .8} 
+     to {opacity: 1}
+ }
+
+

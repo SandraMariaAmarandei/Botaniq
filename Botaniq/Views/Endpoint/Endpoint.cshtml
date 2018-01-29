@@ -1,0 +1,10 @@
+﻿<form class="query" ng-controller="EndpointController as ctrl">
+    <p>Write your query please: </p>
+    <input type="submit" class="submit" ng-click="ctrl.save()">
+    <br>
+    <textarea rows="5" cols="156" name="query" form="usrform" ng-model="query"></textarea>
+    <br/>
+    <p class="result">See the result here: </p>
+    <pre id="content">
+    </pre>
+</form>

@@ -1,0 +1,68 @@
+﻿<div ng-controller="DetailsController as ctrl">
+    <div class="image-description">
+        <img class="image-detail" ng-src="{{plantDetails.image}}">
+    </div>
+    <div class="plant-details">
+        <p class="detail">Plant name:</p>
+        <pre class="info-get">{{plantDetails.name}}</pre>
+        <p class="detail">Plant class:</p>
+        <pre class="info-get">{{plantDetails.classs}}</pre>
+        <p class="detail">Plant division:</p>
+        <pre class="info-get">{{plantDetails.division}}</pre>
+        <p class="detail">Plant family:</p>
+        <pre class="info-get">{{plantDetails.family}}</pre>
+        <p class="detail">Plant order:</p>
+        <pre class="info-get">{{plantDetails.order}}</pre>
+    </div>
+    <div>
+        <p class="detail">Plant description:</p>
+        <pre>{{plantDetails.info}}</pre>
+    </div>
+    <div>
+        <p class="detail">More info here:</p>
+        <a href="{{plantDetails.link}}">{{plantDetails.link}}</a>
+    </div> 
+    <div>
+        <p class="detail plant-form">DBpedia comment:</p>
+        <p>{{plantDetails.comment}}</p>
+    </div>
+    <hr/>
+    <div>
+        <p class="detail plant-form">Added relations:</p>
+        <div ng-repeat="relation in plantDetails.userRelation">
+            <p>>{{relation}}</p>
+        </div>
+    </div>
+    <div>
+        <p class="detail plant-form">Added images:</p>
+        <div ng-repeat="image in plantDetails.userImages">
+            <img class="details-gallery" ng-src="{{image}}">
+        </div>
+    </div>
+    <div>
+        <p class="detail plant-form">Added comments:</p>
+        <div ng-repeat="comment in plantDetails.userComments">
+            <p>>{{comment}}</p>
+        </div>
+    </div>
+    <hr/>
+    <form class="plant-form">
+        <p class="detail">Add a comment:</p>
+        <textarea id="comment-area" rows="5" cols="130" name="comment" form="usrform" ng-model="commentText"></textarea>
+        <br/>
+        <input type="submit" class="submit" ng-click="ctrl.postComment()">
+    </form> 
+    <form class="plant-form">
+        <p class="detail">Add a relation:</p>
+        <textarea id="relation-area" rows="5" cols="130" name="relation" form="usrform" ng-model="relation"></textarea>
+        <br />
+        <input type="submit" class="submit" ng-click="ctrl.postRelation()">
+    </form> 
+    <form class="plant-form">
+        <p class="detail">Add an image url:</p>
+        <input id="image-area" class="send-url" type="text" name="relation" ng-model="imageUrl">
+        <br />
+        <input type="submit" class="submit" ng-click="ctrl.postImage()">
+    </form> 
+
+</div>

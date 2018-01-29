@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr") 
+</head>
+<body ng-app="Botaniq" ng-controller="IndexController as ctrl">
+
+<div class="top">
+    <div class="media">
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/login" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/?hl=ro" class="fa fa-instagram"></a>
+    </div>
+</div>
+
+<div class="topnav">
+    <img class="logo" src="~/images/gradina-botanica-logo.jpg" alt="Mountain View">
+    <div class="navbar">
+        <a href="/Home/Index">Home</a>
+        <a href="/Visit/Visit">Visit</a>
+        <a href="/About/About">About</a>
+        <a href="/Collections/Collections">Collections</a>
+        <a href="/Programs/Programs">Programs</a>
+        <a href="#">Gardening</a>
+    </div>
+    <input type="text" name="search" placeholder="Search..">
+</div>
+
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <img src="~/images/rose.jpg" style="width:100%">
+        <div class="text">Rosarium</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="~/images/stone.jpg" style="width:100%">
+        <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="~/images/flower.jpg" style="width:100%">
+        <div class="text">Caption Three</div>
+    </div>
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+</div>
+
+<div class="container body-content">
+    @RenderBody()
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Gradina Botania Anastasie Fatu Iasi</p>
+    </footer>
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/Scripts")
+@Scripts.Render("~/app")
+</body>
+</html>

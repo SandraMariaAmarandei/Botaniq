@@ -1,0 +1,25 @@
+﻿.plant-name {
+    margin: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline;
+    color: #35647d;
+    margin-left: 40px;
+}
+
+.plant-description {
+    width: 80%;
+    float: right;
+    margin-top: -150px;
+}
+
+.plant-name a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.image img {
+    width: 15%;
+    margin-top: 40px;
+    height: 175px;
+}

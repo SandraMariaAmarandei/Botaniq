@@ -1,0 +1,24 @@
+﻿.floating-box {
+    display: inline-block;
+    height: 300px;
+    width: 500px;
+    margin-top: 60px;
+    margin-left: 45px;
+    margin-bottom: 50px;
+}
+
+.floating-box .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.program {
+    border-top: 1px solid #35647d;
+}
+
+.payment {
+    padding-left: 350px;
+    margin-top: -240px;
+    text-align: right;
+}

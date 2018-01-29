@@ -1,0 +1,13 @@
+﻿<div ng-controller="CollectionController as ctrl">
+    <div ng-repeat="plant in data">
+        <div class="image">
+            <img ng-src="{{plant.image}}">
+        </div>
+        <div class="plant-name">
+            <a href="/Details/Details/{{plant.name}}">{{plant.name}}</a>
+        </div>
+        <div class="plant-description">
+            <p>{{ctrl.mySplit(plant.info)}}</p>
+        </div>
+    </div>
+</div>

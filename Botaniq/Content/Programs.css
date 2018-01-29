@@ -1,0 +1,22 @@
+﻿.programs {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.program-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.program-year {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.program-month {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    color: #35647d;
+}

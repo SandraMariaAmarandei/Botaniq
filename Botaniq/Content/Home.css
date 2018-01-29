@@ -1,0 +1,94 @@
+﻿ .description {
+     height: 200px;
+     width: 75%;
+     margin-top: 70px;
+     margin-left: 350px;
+ }
+
+ .description .welcome {
+     margin: 0 0 30px;
+     font-size: 30px;
+ }
+
+ .description p {
+     font-size: 17px;
+ }
+
+ .calendar {
+     width: 30%;
+     height: 300px;
+     margin-top: -135px;
+     margin-left: -170px;
+ }
+
+ .calendar .title {
+     text-align: center;
+     font-size: 25px;
+     text-decoration: underline;
+     color: #35647d;
+     font-weight: bold;
+ }
+
+ .calendar .info {
+     text-align: center;
+ }
+
+ .calendar .sparql {
+     text-align: center;
+     font-size: 25px;
+     text-decoration: underline;
+     /*color: #35647d;*/
+     font-weight: bold;
+     cursor: pointer;
+     margin-top: 60px;
+ }
+
+ .calendar .info .daily {
+     font-size: 18px;
+     font-weight: bold;
+ }
+
+ .calendar .info .location {
+     font-size: 16px;
+     font-weight: bold;
+     margin-top: 20px;
+     color: #35647d;
+ }
+
+ .calendar .info .entry {
+     font: italic 15px "Open Sans";
+     color: #4d4e53;
+ }
+
+ .news {
+     width: 80%;
+     height: 350px;
+     margin-left: 350px;
+     margin-top: -90px;
+ }
+
+ .news .latest {
+     margin: 0 0 30px;
+     font-size: 30px;
+ }
+
+ div.gallery {
+     margin: 5px;
+     border: 1px solid #ccc;
+     float: left;
+     width: 180px;
+ }
+
+ div.gallery:hover {
+     border: 1px solid #777;
+ }
+
+ div.gallery img {
+     width: 100%;
+     height: auto;
+ }
+
+ div.desc {
+     padding: 15px;
+     text-align: center;
+ }
